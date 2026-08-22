@@ -13,5 +13,5 @@ async function installVilaCash(){
 }
 function continuarSemInstalar(){localStorage.setItem('vc_skip_install','1');document.getElementById('installGate').classList.add('hidden')}
 (function(){if(vilaStandalone()||localStorage.getItem('vc_installed')==='1'||localStorage.getItem('vc_skip_install')==='1')document.getElementById('installGate').classList.add('hidden');else if(isIOS())document.getElementById('iosHelp').classList.remove('hidden')})();
-if('serviceWorker' in navigator)navigator.serviceWorker.register('sw.js');
+if('serviceWorker' in navigator){navigator.serviceWorker.register('sw.js?v=3',{updateViaCache:'none'}).then(r=>r.update()).catch(()=>{});}
 </script></body></html>
