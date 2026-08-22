@@ -7,7 +7,9 @@ window.addEventListener('appinstalled',()=>{localStorage.setItem('vc_installed',
 async function installVilaCash(){
   if(vilaInstallPrompt){vilaInstallPrompt.prompt();let r=await vilaInstallPrompt.userChoice;if(r.outcome==='accepted')document.getElementById('installGate').classList.add('hidden');vilaInstallPrompt=null;return}
   if(isIOS()){document.getElementById('iosHelp').classList.remove('hidden');return}
-  alert('No menu do navegador, toque em “Instalar app” ou “Adicionar à tela inicial”.');
+  const help=document.getElementById('iosHelp');
+  help.classList.remove('hidden');
+  help.innerHTML='Para instalar: abra o menu do navegador e escolha <b>Instalar app</b> ou <b>Adicionar à tela inicial</b>. Você também pode continuar sem instalar.';
 }
 function continuarSemInstalar(){localStorage.setItem('vc_skip_install','1');document.getElementById('installGate').classList.add('hidden')}
 (function(){if(vilaStandalone()||localStorage.getItem('vc_installed')==='1'||localStorage.getItem('vc_skip_install')==='1')document.getElementById('installGate').classList.add('hidden');else if(isIOS())document.getElementById('iosHelp').classList.remove('hidden')})();
