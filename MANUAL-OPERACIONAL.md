@@ -16,10 +16,12 @@ Para resgate:
 1. Localizar o cliente pelo telefone.
 2. Conferir nome e saldo.
 3. Informar o valor da compra atual.
-4. O sistema calcula o limite permitido.
+4. O sistema calcula o limite permitido: no máximo **50% do valor da compra atual**.
 5. Confirmar identidade/PIN quando solicitado.
 6. Confirmar o resgate.
 7. Registrar no sistema de venda o desconto com nomenclatura própria para futura conciliação.
+
+Exemplo: em uma compra de R$ 20,00, o cliente pode utilizar no máximo R$ 10,00 de cashback, desde que possua esse saldo disponível.
 
 ## Se o cliente estiver sem celular
 Usar o fluxo manual somente quando autorizado pela operação. Toda inclusão manual deve identificar o operador responsável.
