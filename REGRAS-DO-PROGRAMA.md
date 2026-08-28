@@ -37,7 +37,8 @@ Créditos mais antigos devem ser consumidos primeiro (FIFO).
 ## 7. Resgate
 - O saldo só pode ser utilizado em compra posterior àquela que o originou.
 - O saldo não pode ser sacado nem transferido para dinheiro.
-- O limite máximo de utilização por compra e o valor mínimo de compra podem ser configurados pela gestão.
+- Em cada compra, o cliente pode utilizar cashback em valor equivalente a até **50% do total da compra**.
+- Se o saldo for maior que esse limite, o restante permanece disponível até o vencimento.
 - O resgate pode exigir confirmação do PIN do cliente.
 - Saldo vencido não pode ser utilizado.
 
